@@ -12,3 +12,15 @@ A lightweight, modular engine that executes AI workflows defined as directed gra
   - Added websoockets and async wait fn's for continuous connection
   - Stateless file designs
   - Simple Deep-QN based action selection mechanism for summarization
+
+
+### Steps to run: -
+  1. Open the root folder, and execute
+         ```uvicorn app.main_orch:app```
+  2. Post the example graph provided in graph.json in the FastAPI's post option, and copy the UUID generated at output.
+  3. Paste the UUID in the url at ws.py (it is denoted where to paste) and run the file.
+
+### Output: -
+
+You should see the output like: -
+<img width="1357" height="723" alt="image" src="https://github.com/user-attachments/assets/cefeba8e-1883-4c49-8ec6-ae60415142ec" />
