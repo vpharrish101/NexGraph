@@ -1,0 +1,12 @@
+{
+  "nodes": [
+    {"id": "summarize", "toolkit_fn": "dl_summarize"},
+    {"id": "refine", "toolkit_fn": "drl_refine"}
+  ],
+  "edges": [
+    {"from_node": "summarize", "to_node": "refine"},
+    {"from_node": "refine", "to_node": "summarize",
+      "condition": "len(state['current_summary']) > state.get('lim', 100)"}
+  ],
+  "start_node": "summarize"
+}
