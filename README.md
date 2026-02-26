@@ -2,10 +2,10 @@
 A lightweight, modular engine that executes AI workflows defined as directed graphs. Nodes call tools (ML/DL/RL modules), edges define flow logic, and the entire pipeline streams live updates
 
 ### Core Features: -
-  -Graph-Defined workflow Pipelines
-  -Each node links to a function in ToolKit.py (e.g., summarizer, RL refinement, etc.).
-  -GraphFlow_Engine walks the graph, executes tools, evaluates edge conditions, and streams outputs.
-  -Real-time updates on workflow progress: summaries, actions taken, Q-values, loop counts, etc.
+  -Graph-Defined workflow Pipelines.\
+  -Each node links to a function in ToolKit.py (e.g., summarizer, RL refinement, etc.).\
+  -GraphFlow_Engine walks the graph, executes tools, evaluates edge conditions, and streams outputs.\
+  -Real-time updates on workflow progress: summaries, actions taken, Q-values, loop counts, etc.\
   -Upload graphs and receive a unique workflow UUID.
 
 ### Added capabilities: -
@@ -24,3 +24,4 @@ A lightweight, modular engine that executes AI workflows defined as directed gra
 
 You should see the output like: -
 <img width="1357" height="723" alt="image" src="https://github.com/user-attachments/assets/cefeba8e-1883-4c49-8ec6-ae60415142ec" />
+
